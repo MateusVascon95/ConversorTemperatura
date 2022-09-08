@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Conversor de temperatura</h2>
+    <p>Digite a temperatura e escolha a unidade</p>
+
+
+    <input type="number" id="ValorEntrada" size="2" required/>
+    <select id="UnidadeEntrada" required>
+        <option selected disabled value="">Selecione</option>
+        <option value="Celcius">°C</option>
+        <option value="Fahrenheit">°F</option>
+        <option value="Kelvin">K</option>
+    </select>
+    <button type="submit" onclick="Converter()">Converter</button>    
+
+
+    <div>
+        <p id="erro"></p>
+        <div class="resultado">
+            <p id="resultCelcius"></p>
+            <p>°C</p>
+        </div>
+        <div class="resultado">
+            <p id="resultFahrenheit"></p>
+            <p>°F</p>
+        </div>
+        <div class="resultado">
+            <p id="resultKelvin"></p>
+            <p>K</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
